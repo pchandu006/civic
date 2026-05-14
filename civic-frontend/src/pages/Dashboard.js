@@ -31,7 +31,7 @@ try {
 
 setLoading(true);
 
-const res = await axios.get("http://localhost:5000/api/posts", {
+const res = await axios.get("https://civic-backend-6wpl.onrender.com/api/posts", {
 headers: { Authorization: `Bearer ${token}` }
 });
 
@@ -158,7 +158,7 @@ ${post.status === "Resolved" && "bg-green-500 text-white"}
 
 {post.image && (
 <img
-src={`http://localhost:5000/uploads/${post.image}`}
+src={`https://civic-backend-6wpl.onrender.com/uploads/${post.image}`}
 className="w-full h-40 object-cover rounded mt-2"
 />
 )}
@@ -201,7 +201,7 @@ className="absolute top-2 right-2"
 
 {selectedPost.image && (
 <img
-src={`http://localhost:5000/uploads/${selectedPost.image}`}
+src={`https://civic-backend-6wpl.onrender.com/uploads/${selectedPost.image}`}
 className="w-full h-60 object-cover rounded mb-3"
 />
 )}

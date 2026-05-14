@@ -13,7 +13,7 @@ function Register() {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:5000/api/users/register", {
+      await axios.post("https://civic-backend-6wpl.onrender.com/api/users/register", {
         name,
         phone,
         password,

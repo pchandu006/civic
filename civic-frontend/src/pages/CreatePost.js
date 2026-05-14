@@ -112,7 +112,7 @@ function Create() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/posts/create",
+        "https://civic-backend-6wpl.onrender.com/api/posts/create",
         formData,
         {
           headers: {
